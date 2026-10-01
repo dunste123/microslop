@@ -33,6 +33,8 @@ android {
     }
     buildFeatures {
         compose = true
+        // TODO: do I need this?
+        viewBinding = true
     }
 }
 
@@ -46,6 +48,11 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.window)
+//    implementation(libs.androidx.navigation.compose)
+//    implementation(libs.androidx.navigation.ui)
+//    implementation(libs.androidx.navigation.fragment)
+//    implementation(libs.androidx.navigation.dynamic.features)
+
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
